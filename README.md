@@ -8,15 +8,15 @@ This group consists of the following people:
 - David Blum
 - Alexander Kraunsøe
 
-## 1. Introduction
+### 1. Introduction
 
-+ ### A. Purpose of the system
++ #### Purpose of the system
 To create a platform where people can share links and stories, much like reddit. The users can then discuss those stories and links on he website
 
-### B. Scope of the system
+#### B. Scope of the system
 The System has to be deployed to a publicly visible server, it has to have an uptime of more than 95% and may not “lose” content sent to it from a simulator program.
 
-### C. Objectives and success criteria of the project
+#### C. Objectives and success criteria of the project
 - Users should be able to create an account and login.
 - Users should be able to create stories or links on the website.
 - Users should be able to create comments to other Users stories and/or comments
@@ -26,7 +26,7 @@ The System has to be deployed to a publicly visible server, it has to have an up
 - The system needs to have an uptime of at least 95% between 2.11 and 14.12
 - All features should be accessible through a REST api so a simulator can use the webapp.
 
-### D. Definitions, acronyms, and abbreviations
+#### D. Definitions, acronyms, and abbreviations
 - Karma
   - The combined sum of up-votes and down-votes. 
 - Flag
@@ -40,25 +40,25 @@ The System has to be deployed to a publicly visible server, it has to have an up
 - Comments
   - Viewing a story, the user will have the feature to discuss the content by making a comment to the story itself or other users.
 
-### E. References
+#### E. References
 Reddit and Hacker news. The webapp will draw a lot of inspirations from these sites, such as design and features.
 Other forum related websites.
 
-## 2. Current system
+### 2. Current system
 There is no current system, meaning we will have to develop the system from scratch.
 
-## 3. Proposed system
+### 3. Proposed system
 
-### A. Overview
+#### A. Overview
 Forum based, Story driven social webapp. where users can share stories from all over the web or post their own personal experiences.
 
-### B. Functional requirements
+#### B. Functional requirements
 Users should be able to post links and/or stories, post comments, flag user's/comments/stories for inappropriate content or harassment.
 Guests should be able to signup, login and view stories.
 
-### C. Nonfunctional requirements
+#### C. Nonfunctional requirements
 
-#### a. Usability
+##### a. Usability
 The webapp must be simple to look at, such that it is clear what links lead to. 
 - It must be clear at a glance a certain story leads to an external site or the post resides in Hacker news clone itself. 
 - It must be clear how many comments are attached to a given post/story and whether you are viewing a comment or the post itself.
@@ -67,15 +67,15 @@ The webapp must be simple to look at, such that it is clear what links lead to.
   - A link to your profile page, where you can edit your personal information, screen name etc.
   - The name and logo of our site.
 
-#### b. Reliability
+##### b. Reliability
 The service must have an uptime of at least 95%, in case of downtime the server must cache incoming requests, for immediate processing hen the service is available again,  such that no data is lost.  
 The site should be running on https, for maximum security, so licensing and certification should be in order. This will allow for encrypted communication between users and our servers, such that user information can not be sniffed by a third party. 
 All user passwords must be hashed and salted before storage, such that our users data is secure in case of a breach of our database. 
 
-#### c. Performance
+##### c. Performance
 The responsiveness of the site should be as fast as possible, and the site should be able to handle at least 100 connections at a time, both should be able to scaled with better hardware.
 
-#### d. Supportability
+##### d. Supportability
 Preferably all browsers and operating systems, but the major ones will be focused on. 
 - Windows 7/8/10, Linux and iOS.
 - Chrome, Firefox and Safari.
