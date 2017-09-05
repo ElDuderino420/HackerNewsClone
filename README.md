@@ -113,7 +113,7 @@ The site uses cookies which means we will have to get consent from ALL new users
 | **Scenario name** | Bob becomes offended |
 | --- | --- |
 | **Participating actors instances** | **Bob** :Registered User |
-| **Flow of events** |1. Bob navigates happily to the url: HaxorNewsClone123.org to post a story.<br>2. Bob reads the daily stories that have been posted and finds something disturbing.<br>3. Bob becomes horribly upset that someone would post such vile things on his favorit forum.<br>4. Bob uses the little flag button to complain, and writes a very strongly worded complaint to the faculty at the website.<br>5. Bob then sits back in his chair, feeling very satisfied with his own work.|
+| **Flow of events** |1. Bob navigates happily to the url: HaxorNewsClone123.org to post a story.<br>2. Bob reads the daily stories that have been posted and finds something disturbing.<br>3. Bob becomes horribly upset that someone would post such vile things on his favorit forum.<br>4. Bob uses the little flag button to complain, and writes a very strongly<br> worded complaint to the faculty at the website.<br>5. Bob then sits back in his chair, feeling very satisfied with his own work.|
 
 #### b. Use case model
 
