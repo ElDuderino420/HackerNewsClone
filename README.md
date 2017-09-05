@@ -10,7 +10,7 @@ This group consists of the following people:
 
 ### 1. Introduction
 
-* + #### Purpose of the system
+#### Purpose of the system
 To create a platform where people can share links and stories, much like reddit. The users can then discuss those stories and links on he website
 
 #### B. Scope of the system
