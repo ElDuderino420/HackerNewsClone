@@ -101,34 +101,34 @@ The site uses cookies which means we will have to get consent from ALL new users
 
 #### a. Scenarios
 | **Scenario name** | Bob becomes user and Comments on a story |
-| ---------------- | ---------------- |
+| :--------------------------------------------------------------- | :--------------------------------------------------------------- |
 | **Participating actor instances** | Bob:Guest |
 | **Flow of events** |1. Bob goes to the site HaxorNewsClone123.org, and sees a hilarious story, he laughs wholeheartedly and becomes infatuated with idea of acknowledging the creator of said story, for his magnificent work.<br>2. Bob goes to the signup form and fills it out. He then gets notified that a confirmation email has been sent to his email address.<br>3. Bob checks his email and waits impatiently to confirm it.<br>4. Bob then goes back to the hilarious story, and writes a Heartfelt poem about the hilarious story.<br>5. Bob then contemplates about his life and draws many comparisons to the story and his own experiences.|
 
 | **Scenario name** | User creates a post |
-| ---------------- | ---------------- |
+| :--------------------------------------------------------------- | :--------------------------------------------------------------- |
 | **Participating actors instances** | **Bob** :Registered User |
 | **Flow of events** |1. Bob navigates to the url: HaxorNewsClone123.org to post a story.<br>2. Bob logs in by pressing the login button in the top of the screen.<br>3. Bobs gains login access by typing in his userName and password.<br>4. Bob login attempt is successful and he is redirected back to the front page.<br>5. Bob presses the write post button.<br>6. Bob is presented with a screen containing an online text editor, wherein he writes his post.<br>7. Bob clicks the &quot;post&quot; button when he is done writing the post.<br>8. Bob is redirected to his post (there same one other user would see when clicking it).<br>9. Bob collects karma and there is much rejoicing.|
 
 | **Scenario name** | Bob becomes offended |
-| ---------------- | ---------------- |
+| :--------------------------------------------------------------- | :--------------------------------------------------------------- |
 | **Participating actors instances** | **Bob** :Registered User |
 | **Flow of events** |1. Bob navigates happily to the url: HaxorNewsClone123.org to post a story.<br>2. Bob reads the daily stories that have been posted and finds something disturbing.<br>3. Bob becomes horribly upset that someone would post such vile things on his favorit forum.<br>4. Bob uses the little flag button to complain, and writes a very strongly worded complaint to the faculty at the website.<br>5. Bob then sits back in his chair, feeling very satisfied with his own work.|
 
 #### b. Use case model
 
 | **Use Case Name** | Guest Transitions to user and Comments on a story |
-| --- | --- |
+| :--- | :--- |
 | **Participating actor instances** | Bob:Guest |
 | **Flow of events** |1. The Guest sees a story.<br>2. The Guest uses the signup form to become a user.<br>3. The Guest confirms the signup through email confirmation.<br>4. The new user then goes back to the story and posts a comment.|
 
 | **Use Case Name** | User creates a post |
-| --- | --- |
+| :--- | :--- |
 | **Participating actor instances** | **Bob** :Registered User |
 | **Flow of events** |1. The user logs in. <br>   a. The server validates the given data against the database. <br>   b.If a returns true, the user is logged in the HNC.<br>2. The user access the post functionality<br>3. The user is redirected to our online post/text editor.<br>4. The user submits the post.<br>5. The úser is redirected to their new post<br>   a. HNC is updated with the new post, such that it is accessible to all users and guests.|
 
 | **Use Case Name** | Registered user reports a story |
-| --- | --- |
+| :--- | :--- |
 | **Participating actors instances** | **Bob** :Registered User |
 | **Flow of events** |1. A registered user sees a story that violates the terms and conditions of the site.<br>2. The Registered user then uses the report function and gives a description of the abuse.<br>3. A faculty member then reviews the story, and if deemed appropriate removes the content and the user is either temporarily banned or permanently banned. |
 
