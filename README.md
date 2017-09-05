@@ -103,7 +103,6 @@ The site uses cookies which means we will have to get consent from ALL new users
 | **Scenario name** | Bob becomes user and Comments on a story |
 | --- | --- |
 | **Participating actor instances** | Bob:Guest |
-| --- | --- |
 | **Flow of events** |
 1. Bob goes to the site HaxorNewsClone123.org, and sees a hilarious story, he laughs wholeheartedly and becomes infatuated with idea of acknowledging the creator of said story, for his magnificent work.
 2. Bob goes to the signup form and fills it out. He then gets notified that a confirmation email has been sent to his email address.
@@ -163,10 +162,6 @@ The site uses cookies which means we will have to get consent from ALL new users
 | **Scenario name:** | Registered user reports a story |
 | --- | --- |
 | **Participating actors instances** | **Bob** :Registered User |
-| **Flow of events** |
-1. A registered user sees a story that violates the terms and conditions of the site.
-2. The Registered user then uses the report function and gives a description of the abuse.
-3. A faculty member then reviews the story, and if deemed appropriate removes the content and the user is either temporarily banned or permanently banned.
- |
+| **Flow of events** |1. A registered user sees a story that violates the terms and conditions of the site.<br>2. The Registered user then uses the report function and gives a description of the abuse.<br>3. A faculty member then reviews the story, and if deemed appropriate removes the content and the user is either temporarily banned or permanently banned. |
 
 ## 4. Glossary
