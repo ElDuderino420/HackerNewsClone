@@ -103,6 +103,7 @@ The site uses cookies which means we will have to get consent from ALL new users
 | **Scenario name** | Bob becomes user and Comments on a story |
 | --- | --- |
 | **Participating actor instances** | Bob:Guest |
+| --- | --- |
 | **Flow of events** |
 1. Bob goes to the site HaxorNewsClone123.org, and sees a hilarious story, he laughs wholeheartedly and becomes infatuated with idea of acknowledging the creator of said story, for his magnificent work.
 2. Bob goes to the signup form and fills it out. He then gets notified that a confirmation email has been sent to his email address.
