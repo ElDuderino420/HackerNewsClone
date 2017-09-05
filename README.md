@@ -77,7 +77,7 @@ The responsiveness of the site should be as fast as possible, and the site shoul
 
 #### d. Supportability
 Preferably all browsers and operating systems, but the major ones will be focused on. 
-- Windows 7/8/10, linux and iOS.
+- Windows 7/8/10, Linux and iOS.
 - Chrome, Firefox and Safari.
 - Mobile and Desktop renditions.
 It should also be able to run even while updating the site.
