@@ -11,7 +11,7 @@ This group consists of the following people:
 ## 1. Introduction
 
 ### A. Purpose of the system
-  To create a platform where people can share links and stories, much like reddit. The users can then discuss those stories and links on he website
+To create a platform where people can share links and stories, much like reddit. The users can then discuss those stories and links on he website
 
 ### B. Scope of the system
 The System has to be deployed to a publicly visible server, it has to have an uptime of more than 95% and may not “lose” content sent to it from a simulator program.
