@@ -83,7 +83,9 @@ Preferably all browsers and operating systems, but the major ones will be focuse
 It should also be able to run even while updating the site.
 
 #### e. Implementation & Constraints
-The site should be developed in Javascript and HTML. 
+The server has to have a REST API for accessing functions such as publishing stories and comments. This REST API must also be accessible to a simulator program use these functions.
+
+Additionally the system may never lose any content, even when down during maintenance.
 
 #### f. Interface
 One user page, one story page, one comment thread.
