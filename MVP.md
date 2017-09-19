@@ -12,7 +12,8 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 
 - Continuous delivery guide:
 - Push sourcecode to github
-- github webhooks cathes the changes which notifies jenkins
+- github webhooks catches the changes which notifies jenkins
+[github-plugin]
 - Jenkins build tasks
   -  Mocha tests
   -  Docker image
@@ -21,6 +22,7 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
   -  run the docker image
 - Docker then runs the server containers:
 ***
+
 ## Backend-test Jenkins
 ![alt text][scm-test]
 ***
@@ -35,7 +37,7 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 ***
 ![alt text][es-docker]
   
-
+[github-plugin]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-02-53.jpg "github plugin"
 [scm-test]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-13.jpg "Source Code Management for backend-test"
 [bt-test]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-26.jpg "Build Triggers for backend-test"
 [es-test]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-31.jpg "Executive Shell"
