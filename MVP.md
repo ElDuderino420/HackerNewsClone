@@ -33,13 +33,6 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
   -  ssh to production server (DO droplet)
   -  run the docker image
 - Docker then runs the server containers:
-***
-
-## Backend-test Jenkins
-
-
-## Backend-Docker Jenkins
-
   
 [github-plugin]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-02-53.jpg "github plugin"
 [scm-test]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-13.jpg "Source Code Management for backend-test"
