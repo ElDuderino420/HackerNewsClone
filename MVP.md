@@ -15,11 +15,11 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend<br>
 - Push sourcecode to github<br>
 - github webhooks cathes the changes which notifies jenkins<br>
 - Jenkins build tasks<br>
-&nbsp;&nbsp;&nbsp;  -  Mocha tests<br>
-&nbsp;&nbsp;&nbsp;  -  Docker image<br>
-&nbsp;&nbsp;&nbsp;  -  push it to dockerHub<br>
-&nbsp;&nbsp;&nbsp;  -  ssh to production server (DO droplet)<br>
-&nbsp;&nbsp;&nbsp;  -  run the application<br>
+  -  Mocha tests<br>
+  -  Docker image<br>
+  -  push it to dockerHub<br>
+  -  ssh to production server (DO droplet)<br>
+  -  run the application<br>
 - Docker then runs the server containers:<br>
   
   
