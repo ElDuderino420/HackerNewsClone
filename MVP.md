@@ -21,12 +21,14 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
   -  run the docker image
 - Docker then runs the server containers:
 ***
+## Backend-test Jenkins
 ![alt text][scm-test]
 ***
 ![alt text][bt-test]
 ***
 ![alt text][es-test]
 ***
+## Backend-Docker Jenkins
 ![alt text][scm-docker]
 ***
 ![alt text][bt-docker]
