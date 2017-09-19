@@ -13,7 +13,7 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 - Continuous delivery guide:
 - Push sourcecode to github
 - github webhooks catches the changes which notifies jenkins
-[github-plugin]
+![alt text][github-plugin]
 - Jenkins build tasks
   -  Mocha tests
   -  Docker image
