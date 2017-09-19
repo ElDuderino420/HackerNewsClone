@@ -1,26 +1,42 @@
-A MVP of HackerNewsClone <br>
-A static working http site: 188.226.152.93:3000<br>
+A MVP of HackerNewsClone
+A static working http site: 188.226.152.93:3000
 Rest call endpoints
-- 188.226.152.93:3000/api/new<br>
-- 188.226.152.93:3000/api/all<br>
+- 188.226.152.93:3000/api/new
+- 188.226.152.93:3000/api/all
                         
-The two REST calls works where the first one creates some random data and the second gets all the current data in the database<br>
+The two REST calls works where the first one creates some random data and the second gets all the current data in the database
 
-github for frontend: https://github.com/ElDuderino420/HackerNewsClone-frontend<br>
-github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend<br>
+github for frontend: https://github.com/ElDuderino420/HackerNewsClone-frontend
+github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 
 
-
-- Continuous delivery guide:<br>
-- Push sourcecode to github<br>
-- github webhooks cathes the changes which notifies jenkins<br>
-- Jenkins build tasks<br>
-  -  Mocha tests<br>
-  -  Docker image<br>
-  -  push it to dockerHub<br>
-  -  ssh to production server (DO droplet)<br>
-  -  run the application<br>
-- Docker then runs the server containers:<br>
+- Continuous delivery guide:
+- Push sourcecode to github
+- github webhooks cathes the changes which notifies jenkins
+- Jenkins build tasks
+  -  Mocha tests
+  -  Docker image
+  -  push it to dockerHub
+  -  ssh to production server (DO droplet)
+  -  run the docker image
+- Docker then runs the server containers:
+***
+![alt text][scm-test]
+***
+![alt text][bt-test]
+***
+![alt text][es-test]
+***
+![alt text][scm-docker]
+***
+![alt text][bt-docker]
+***
+![alt text][es-docker]
   
-  
 
+[scm-test]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-13.jpg "Source Code Management for backend-test"
+[bt-test]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-26.jpg "Build Triggers for backend-test"
+[es-test]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-31.jpg "Executive Shell"
+[scm-docker]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-37.jpg "Source Code Management for backend-docker"
+[bt-docker]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-45.jpg "Build triggers for backend-docker"
+[es-docker]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/photo_2017-09-19_15-03-56.jpg "build environment, bindings and executive Shells"
