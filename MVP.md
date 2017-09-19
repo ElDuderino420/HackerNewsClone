@@ -6,7 +6,7 @@ Testing of the database 188.226.152.93:3000/api/new<br>
 The two database tests works where the first one creates some random data and the second gets all the current data in the database<br>
 
 github for frontend: https://github.com/ElDuderino420/HackerNewsClone-frontend<br>
-github for database: https://github.com/ElDuderino420/HackerNewsClone-backend<br>
+github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend<br>
 
 
 
