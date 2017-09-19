@@ -16,18 +16,18 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 ![alt text][github-plugin]
 - Jenkins build tasks
   -  Mocha tests
-![alt text][scm-test]
+  ![alt text][scm-test]
 
-![alt text][bt-test]
+  ![alt text][bt-test]
 
-![alt text][es-test]
+  ![alt text][es-test]
 
   -  Docker image
-![alt text][scm-docker]
+  ![alt text][scm-docker]
 
-![alt text][bt-docker]
+  ![alt text][bt-docker]
 
-![alt text][es-docker]
+  ![alt text][es-docker]
 
   -  push it to dockerHub
   -  ssh to production server (DO droplet)
