@@ -26,14 +26,15 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
       - sudo apt-get update
       - sudo apt-get install jenkins
     - Now that we have jenkins running we can connect to it with <your_ip>:8080 <br>
-	![alt text][https://image.prntscr.com/image/aIpZMnn4RFO3WV1YkfjFLA.png]
+	![alt text][https://github.com/ElDuderino420/HackerNewsClone/blob/master/images/jenkins_img1.png "jenkins plugin"]
     - to get the password use the following in the ssh client:
       - cat /var/lib/jenkins/secrets/initialAdminPassword 
     - install suggested plugins
+![alt text][github-plugin]    
  - Now create the following jobs       
 
 
-![alt text][github-plugin]
+
 - Jenkins build tasks
   -  Mocha tests
   ![alt text][scm-test]
