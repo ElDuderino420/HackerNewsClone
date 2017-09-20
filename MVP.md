@@ -7,6 +7,7 @@ Rest call endpoints
 The two REST calls works where the first one creates some random data and the second gets all the current data in the database
 
 github for frontend: https://github.com/ElDuderino420/HackerNewsClone-frontend
+
 github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 
 
