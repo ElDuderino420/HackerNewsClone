@@ -13,6 +13,26 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 - Continuous delivery guide:
 - Push sourcecode to github
 - github webhooks catches the changes which notifies jenkins
+
+  - How to setup Jenkins with NodeJS, mongo and mocha
+    - Create a new droplet on DO
+    - ssh to the new droplet
+    - sudo apt-get update (update the machine)
+    - sudo apt-get install default-jre (get java, say yes to the prompt) 
+    - sudo apt-get install default-jdk (say yes to the prompt)
+    - install jenkins
+      - sudo wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+      - sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+      - sudo apt-get update
+      - sudo apt-get install jenkins
+    - Now that we have jenkins running we can connect to it with <your_ip>:8080 <br>
+	![alt text][https://image.prntscr.com/image/aIpZMnn4RFO3WV1YkfjFLA.png]
+    - to get the password use the following in the ssh client:
+      - cat /var/lib/jenkins/secrets/initialAdminPassword 
+    - install suggested plugins
+    - 
+
+
 ![alt text][github-plugin]
 - Jenkins build tasks
   -  Mocha tests
