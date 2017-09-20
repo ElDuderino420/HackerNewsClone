@@ -30,7 +30,7 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
     - to get the password use the following in the ssh client:
       - cat /var/lib/jenkins/secrets/initialAdminPassword 
     - install suggested plugins
-    - 
+ - Now create the following jobs       
 
 
 ![alt text][github-plugin]
