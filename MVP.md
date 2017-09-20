@@ -39,8 +39,8 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
   ![alt text][bt-test]
 
   ![alt text][es-test]
-
-	-  Docker image
+  
+  -  Docker image
   ![alt text][scm-docker]
 
   ![alt text][bt-docker]
