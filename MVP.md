@@ -32,11 +32,7 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
       - cat /var/lib/jenkins/secrets/initialAdminPassword 
     - install suggested plugins
 ![alt text][github-plugin]    
- - Now create the following jobs       
-
-
-
-- Jenkins build tasks
+ - Now create the following Jenkins build tasks
   -  Mocha tests
   ![alt text][scm-test]
 
