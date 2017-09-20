@@ -33,14 +33,14 @@ github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
     - install suggested plugins
 ![alt text][github-plugin]    
  - Now create the following Jenkins build tasks
-  -  Mocha tests
+ 	-  Mocha tests
   ![alt text][scm-test]
 
   ![alt text][bt-test]
 
   ![alt text][es-test]
 
-  -  Docker image
+	-  Docker image
   ![alt text][scm-docker]
 
   ![alt text][bt-docker]
