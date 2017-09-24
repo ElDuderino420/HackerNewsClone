@@ -1,6 +1,8 @@
 A MVP of HackerNewsClone
-A static working http site: 188.226.152.93:3000
-Rest call endpoints
+
+A static working React App at: 188.226.152.93:5000
+
+A node express server with following REST endpoints:
 - 188.226.152.93:3000/api/new
 - 188.226.152.93:3000/api/all
                         
@@ -8,10 +10,22 @@ The two REST calls works where the first one creates some random data and the se
 
 github for frontend: https://github.com/ElDuderino420/HackerNewsClone-frontend
 
+Method for building:
+- run npm run build before pushing!!!!
+- webpack and babel take too much memory to build on the server, so we build locally and push the build to github.
+- Push sourcecode to github on master branch
+- GitHub webhooks catched the changes and notifies Jenkins
+- Jenkins runs build task to deploy
+
 github for backend: https://github.com/ElDuderino420/HackerNewsClone-backend
 
+Method for building:
+- Push sourcecode to github on master branch
+- GitHub webhooks catched the changes and notifies Jenkins
+- Jenkins runs build task to deploy
 
-- Continuous delivery guide:
+
+Continuous delivery guide:
 - Push sourcecode to github
 - github webhooks catches the changes which notifies jenkins
 
