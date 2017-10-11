@@ -21,4 +21,4 @@
 | **Flow of events** |   1. While Bob is logged he can browse all stories and comments. <br>   2. Bob finds something he likes and clicks upvote <br>   2. The creator of said story or comment then gains one karma <br> 3. Bob then browse other stories and finds some offensive content and clicks the downvote feature<br>   4. If Bob has more than 500 karma then the site accepts the downvote, if not nothing happens.|
 
 
-[use_case]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/use_case_diagram.png "A complete use case diagram"
+[use_case]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/use_case_diagram2.png "A complete use case diagram"
