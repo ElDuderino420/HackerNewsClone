@@ -4,7 +4,7 @@
  ![alt text][use_case]
 
 - Actors
-  - There is only one actor, which is a site user, who is a user on the site, who will be refered to as Bob in all cases.
+  - There is only one actor, which is a site user, who is a user on the site, who will usually be refered to as Bob.
 - Use cases
   - As a user you can Browse Stories posted on the site.
   - As a user you can register, so the system can recognize you.
