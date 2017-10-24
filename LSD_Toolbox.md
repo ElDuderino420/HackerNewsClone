@@ -1,5 +1,5 @@
 ### A discription of our H4x0r news site.
-
+#### **Authors** **_Alexandar Kraunsør_**,**_Christian Lind med Stump Z_**,**_David Blum S._**,**_Kasper Pagh_**,**_Marco S. Blum_**
 
 
 ## Division of Sub-systems
