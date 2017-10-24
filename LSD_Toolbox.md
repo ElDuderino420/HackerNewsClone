@@ -78,7 +78,7 @@ We plan on implementing more fields in the post, at a later point (the backend i
 | :--- | :--- |
 | **Participating actor instances** | **Bob** :Unregistered User |
 | **Flow of events** |   1. While Bob is viewing the site he can browse all stories and comments. |
-<br>
+
 | **Use Case Name** | **Register User** |
 | :--- | :--- |
 | **Participating actor instances** | **Bob** :Unregistered User |
