@@ -82,43 +82,27 @@ We plan on implementing more fields in the post, at a later point (the backend i
 | **Use Case Name** | **Register User** |
 | :--- | :--- |
 | **Participating actor instances** | **Bob** :Unregistered User |
-| **Flow of events** |   
-1. While Bob is viewing the site there is an button on which to register
-2. Bob clicks the button and is asked to fill in some user information about himself.
-3. Bob then clicks register user after all information has been filled in.
-4. Bob is now a registered user. |
+| **Flow of events** | 1. While Bob is viewing the site there is an button on which to register <br>2. Bob clicks the button and is asked to fill in some user information about himself.<br> 3. Bob then clicks register user after all information has been filled in. <br> 4. Bob is now a registered user. |
 <br>
 | **Use Case Name** | **log-in** |
 | :--- | :--- |
 | **Participating actor instances** | **Bob** :Registered User |
-| **Flow of events** |   
-1. While Bob is viewing the site he sees an option to log-in to the site.
-2. Bob clicks this option and is required to fill in username and password 
-3. Bob then clicks log in.
-4. Whilst bob is logged in other users have the option to see his presence.|
+| **Flow of events** | 1. While Bob is viewing the site he sees an option to log-in to the site.<br> 2. Bob clicks this option and is required to fill in username and password <br> 3. Bob then clicks log in. <br> 4. Whilst bob is logged in other users have the option to see his presence.|
 <br>
 | **Use Case Name** | **LogOut** |
 | :--- | :--- |
 | **Participating actor instances** | **Bob** :Logged in User |
-| **Flow of events** | 
-1. While Bob is logged in he can browse all stories and comments. 
-2. Bob decides after 14 hours on the website enough is enough 
-3. Bob doesn’t want the rest of the sites users to know of his presence any longer.
-4. Bob then decides to hit the logout button which removes his presence from the server.|
+| **Flow of events** | <br>1. While Bob is logged in he can browse all stories and comments. <br> 2. Bob decides after 14 hours on the website enough is enough <br> 3. Bob doesn’t want the rest of the sites users to know of his presence any longer.<br> 4. Bob then decides to hit the logout button which removes his presence from the server.|
 <br>
 | **Use Case Name** | **Flag** |
 | :--- | :--- |
 | **Participating actor instances** | **Bob** :Logged in User |
-| **Flow of events** | 
-1. While Bob is logged in he can browse all stories and comments. 
-2. Bob finds something he find offensive and flags the post for lack of racism. |
+| **Flow of events** | 1. While Bob is logged in he can browse all stories and comments. <br> 2. Bob finds something he find offensive and flags the post for lack of racism. |
 <br>
 | **Use Case Name** | **Loanbroker** |
 | :--- | :--- |
 | **Participating actor instances** | **Bob** :Logged in User |
-| **Flow of events** | 
-1. While Bob is logged in he has the option to visit a loanbroker webservice
-2. Bob clicks the link and is redirected to the most amazing loanbroker service in the world. |
+| **Flow of events** | 1. While Bob is logged in he has the option to visit a loanbroker webservice<br> 2. Bob clicks the link and is redirected to the most amazing loanbroker service in the world. |
 <br>
 | **Use Case Name** | **User upvotes and downvotes** |
 | :--- | :--- |
@@ -128,31 +112,22 @@ We plan on implementing more fields in the post, at a later point (the backend i
 | **Use Case Name** | **Superfluous Helge** |
 | :--- | :--- |
 | **Participating actor instances** | **Helge** : A Mythical Creature found in German Folklore |
-| **Flow of events** | 
-1. Helge has access to the backend
-2. Helge can create as many users as he choses. |
+| **Flow of events** | 1. Helge has access to the backend<br> 2. Helge can create as many users as he choses. |
 <br>
 | **Use Case Name** | **OverPowered Helge** |
 | :--- | :--- |
 | **Participating actor instances** | **Helge** : A Mythical Creature found in German Folklore |
-| **Flow of events** | 
-1. Helge has access to the backend
-2. Helge has created a superfluous amounts of extra users.
-3. Helge can make posts for all of his created users spamming the site at his will. |
+| **Flow of events** | 1. Helge has access to the backend <br> 2. Helge has created a superfluous amounts of extra users. <br> 3. Helge can make posts for all of his created users spamming the site at his will. |
 <br>
 | **Use Case Name** | **Lost Helge** |
 | :--- | :--- |
 | **Participating actor instances** | **Helge** : A Mythical Creature found in German Folklore |
-| **Flow of events** | 
-1. Helge has access to the Backend
-2. Helge has made so many superfluous users and posts that he can’t keep track of them himself.
-3. Helge can find the latest post from one of his users at will. |
+| **Flow of events** | 1. Helge has access to the Backend<br> 2. Helge has made so many superfluous users and posts that he can’t keep track of them himself.<br> 3. Helge can find the latest post from one of his users at will. |
 <br>
 | **Use Case Name** | **Status Check** |
 | :--- | :--- |
 | **Participating actor instances** | **Application**: Server status checker. |
-| **Flow of events** | 
-1. As anyone you can request service status from Actor. |
+| **Flow of events** | 1. As anyone you can request service status from Actor. |
 <br>
 ## Sequence Diagram
 The sequence diagram is quite big for us to share, click on the following link which allows you to zoom in and maneuver around yourself to see each individual part.
