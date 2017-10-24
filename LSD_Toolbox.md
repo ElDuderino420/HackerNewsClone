@@ -26,31 +26,31 @@ This module consists of nothing but an instance of MongoDB running in a separate
 
 #### Server
 This module consists of a Node.js/Express http server, that contains all our API endpoints. 
-![alt text][server_1]<br>
+<br>![alt text][server_1]<br>
 To make for seamless integration between the API and the frontend  (that consumes the responses from the API), we use a combination of two strategies. Firstly we make sure to heavily comment on all the methods in our API. Below is an example of this practice
-![alt text][server_2]<br>
+<br>![alt text][server_2]<br>
 Secondly we make use of a continuously updated document, that resides in the git repositories root folder. This document, called “HackerNewsApiDocumentation” contains documentation and examples for every single endpoint in the API. Here follows an example:
-![alt text][server_3]<br>
+<br>![alt text][server_3]<br>
 Together the above practices assures we always have up-to-date and easily accessible documentation at hand for developing up against the REST API.  
 
 
 ### Frontend
 #### Description of Modules
-![alt text][frontend_1]<br>
+<br>![alt text][frontend_1]<br>
 
 #### Nginx
 This is a load balancing feature which is used to have multiple instances of backend running so that even if one goes down the site continuous. As we are using continuous integration with Jenkins, this also means that when updating the backend, it is down sequentially. So that one of the the backend instances also operates, while the other is updating.
 
-![alt text][frontend_2]<br>
+<br>![alt text][frontend_2]<br>
 
 ## Logical Data Model
 The above is our logical data model. It deviates quite a bit from the usual SQL based models. Since we use Mongo DB we have seen no sense in dividing the model into more than two parts.
-![alt text][lgm_1]<br>
+<br>![alt text][lgm_1]<br>
 We plan on implementing more fields in the post, at a later point (the backend is still a work in progress). Chief amongst these is the comment_parent which serves the purpose of alleviating some pressure from the backend, since finding all the replies to a heavily commented post would demand a lot of search queries to the database.   
 <br>In essence a given user just submits posts, the rest is logic in the database facade.   
 
 ## Use Cases
-![alt text][use_case]<br>
+<br>![alt text][use_case]
 ### A brief introduction to the use cases and actors
 #### Actors
 - The one most noticeble is Bob, who is a site user, which is why we will refer to Bob in most cases.
