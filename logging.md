@@ -1,5 +1,6 @@
   #logging
-  
+  Gruppe A, Alexander Kraunsøe, Christian Lind, David Blum S., Kasper Pagh & Marco S. Blum
+
 we used Winston nodejs package to create log files.
 and Filebeat, Logstash, Elasicsearch, Nginx and Kibana
 
