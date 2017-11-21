@@ -10,7 +10,7 @@ Alerting is done with grafana, we have sat up a group for the developers and a b
 This can be expanded upon and add the oporations team, if they at anytime setup a telegram group.
 
 Here is an example of the bot telling the dev group that there are problems on the server:
-
+<br>![alt text][telegram_1]<br>
 
 [kibana_1]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/log/kibana.png "An example of our Kibana dashboard"
 [telegram_1]: https://github.com/ElDuderino420/HackerNewsClone/blob/master/log/telegram_crash_showcase.png "An example of the error message when the server is down"
