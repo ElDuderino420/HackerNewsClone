@@ -75,36 +75,14 @@ This requests prompts the buildserver to get the latest code to test, build and 
 
 When the frontend is up and running it’ll only communicate with the backend, in turn meaning that all communication to and from the database is handled exclusively by the backend. 
 
+
+<p align="center"><img src="https://github.com/ElDuderino420/HackerNewsClone/blob/master/LSDShots/1.PNG" alt="arch diagram" width="50%" height="50%" border="10"></p>
 An illustration detailing the connections between the various subsystems, that make up 
-our Hackernews clone (source: ill. made for earlier assignment. Org. hand-in: https://github.com/ElDuderino420/HackerNewsClone/blob/master/documentation.pdf)
+our Hackernews clone (source: ill. made for earlier assignment. Org. handin: https://github.com/ElDuderino420/HackerNewsClone/blob/master/documentation.pdf)
 
 ### Communication
 The communication between the various subsystems mentioned above can be outlined as follows in this table:    
-
-System A
-Method of communication
-System B
-Backend
-HTTP REST API
-Frontend
-Backend
-Network connection
-Database
-Backend
-HTTP request 
-Metrics visualizer 
-Metrics visualizer
-HTTP request 
-Alert system
-Source repository
- HTTP request 
-Buildserver 
-Buildserver
-SSH connection 
-Backend
-Buildserver
-SSH connection 
-Frontend
+<p align="center"><img src="https://github.com/ElDuderino420/HackerNewsClone/blob/master/LSDShots/2.PNG" alt="arch diagram" width="50%" height="50%" border="10"></p>
 
 One arrow in the middle column indicates that the communication between system A and system B is unidirectional, while two arrows, pointing seperate directions, indicates that the data exchange has the possibility to be omnidirectional.
 
