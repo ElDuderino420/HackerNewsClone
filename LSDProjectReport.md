@@ -120,6 +120,67 @@ CMD [ "npm", "start" ]
 <p><i> An illustration showing the contents of a dockerfile
 https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/Dockerfile </i></p> 
 
+For the frontend we used the nginx docker image, to serve the files for the frontend. We also used this nginx server as a load balancer and reverse proxy for the backend, to combine all the API calls to port 8080.
+
+```
+http {
+    include       /etc/nginx/mime.types;
+
+
+    upstream hackernews {
+        server 188.226.152.93:3000;
+        server 188.226.152.93:3030;
+    }
+    server {
+        listen 8080;
+
+        #server_name 188.226.152.93;
+        server_name localhost;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $remote_addr;
+
+        
+
+        location /status {
+            proxy_pass http://188.226.152.93:3001;
+        }
+
+        location /loanrequest {
+            proxy_pass http://188.226.152.93:3002;
+        }
+
+        location / {
+            proxy_pass http://hackernews;
+        }
+    }
+
+    server {
+        listen 80;
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+        #server_name 188.226.152.93;
+        server_name localhost;
+
+        location ~ ^/(images|javascript|js|css|flash|media|static)/  {
+            
+            expires 30d;
+        }
+
+        location / {
+            
+            #expires -1;
+            #add_header Pragma "no-cache";
+            #add_header Cache-Control "no-store, no-cache, must-revalidate, post-check=0, pre-check=0";
+            try_files $uri$args $uri$args/ $uri $uri/ /index.html =404;
+        }
+
+        
+    }
+}
+```
+<p><i> An illustration showing part of the nginx.conf file
+https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/nginx.conf </i></p> 
+
 
 We also soon after we started working on our project got the requirements from school that Helge would be posting Posts and Comments to our web application. These requirements altered our plans for the REST calls slightly, because of the way they would be sent and handled. 
 The posts and comments that were sent to us as JSON blobs, had the following format: 
