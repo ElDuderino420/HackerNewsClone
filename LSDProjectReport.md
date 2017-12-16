@@ -2,60 +2,36 @@
 
 LSD REPORT
 Hackernews Clone
-
-Copenhagen Business Academy
-16/12-2017
-
- _____________________________________
-
-
-By Group A: 
-David Blum, Marco Blum, Alexandar Kraunsøe,  Christian Lind & Kasper Pagh
-
-
-
-System Requirements	2
-Development Process	2
-System Architecture	3
-Subsystems	3
-Communication	5
-Reasoning for Architecture	5
-Software Design	6
-Software Implementation	7
-Maintenance and SLA Status	11
-Hand-Over	11
-Service-Level Agreement	11
-Maintenance and Reliability	12
-Technical Discussion	13
-Group Work Reflection & Lessons Learned	14
-
-
-
+---
 
 Relevant links for this project:
 The site can be accessed at: http://188.226.152.93/#/.
-All the handins during the lsd project can be found here: https://github.com/ElDuderino420/HackerNewsClone
-The frontend repository can be found here: https://github.com/ElDuderino420/HackerNewsClone-frontend 
-The backend repository can be found here:
-https://github.com/ElDuderino420/HackerNewsClone-backend 
 
-
-System Requirements
+All the handins during the lsd project can be found here: https://github.com/ElDuderino420/HackerNewsClone
+
+The frontend repository can be found here: https://github.com/ElDuderino420/HackerNewsClone-frontend 
+
+The backend repository can be found here: https://github.com/ElDuderino420/HackerNewsClone-backend 
+
+
+# System Requirements
 The objective of this project is to make a clone of https://news.ycombinator.com/. 
 This requires the app to have a list of features that have been extracted from here.
-Functional requirements can be summed up as the following 6.
-Users should be able to create an account and login
-Users should be able to create stories or links on the website
-Users should be able to create comments to other Users stories
-Users should be able to upvote other users content.
-Users should be able to flag other users content 
-Users should not be able to downvote if they have less than 500 karma accumulated.
+Functional requirements can be summed up as the following 6:
+- Users should be able to create an account and login
+- Users should be able to create stories or links on the website
+- Users should be able to create comments to other Users stories
+- Users should be able to upvote other users content.
+- Users should be able to flag other users content 
+- Users should not be able to downvote if they have less than 500 karma accumulated.
 
-Non-functional requirements can be summed up as the following.
-The system needs to have an uptime of at least 95% between 11. of Nov and 14. of Dec
-There should be a REST api to post and get the latest posted story which a simulator can access.
-a Rest call that can respond Alive, Update, or Down accordingly
-Development Process
+Non-functional requirements can be summed up as the following:
+- The system needs to have an uptime of at least 95% between 11. of Nov and 14. of Dec
+- There should be a REST api to post and get the latest posted story which a simulator can access.
+- a Rest call that can respond Alive, Update, or Down accordingly
+
+
+# Development Process
 Throughout this project we, group A, have been working using parts from Scrum and XP. As Scrum is agile and always is open to changes in requirements, it was the most suitable choice for this development process.
 We integrated some principles from XP, such as continuous integration and pair programming. The latter being a big factor, since it often allows us to catch errors quite quickly. One person codes while the other observes, navigates and review the code that is being made.
 
