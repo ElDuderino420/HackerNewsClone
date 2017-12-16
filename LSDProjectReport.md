@@ -25,7 +25,7 @@ The backend repository can be found here: https://github.com/ElDuderino420/Hacke
 
 ## System Requirements
 The objective of this project is to make a clone of https://news.ycombinator.com/. 
-This requires the app to have a list of features that have been extracted from here<sup>[**1**]</sup>.
+This requires the app to have a list of features that have been extracted from here<a name="ref1"><sup>[**1**]</sup></a>.
 
 Functional requirements can be summed up as the following 6<sup>[**2**]</sup>:
 - Users should be able to create an account and login
@@ -346,10 +346,9 @@ We have throughout the whole project written the handins in google docs and then
 - Footnotes
 - Page numbers
 - Pictures are much easier implemented in any other text editor.
-- Line breaks, .md often has lines that break and some that doesn’t where one has to go through it multiple times to put <br> everywhere.
 - A host of other tools and formats that are just not viable in .md
 
- 
+ [create an anchor](#anchors-in-markdown)
 ### Group Work Reflection & Lessons Learned
 We designated roles to every member of the group, and after the first day we completely forgot about them and just worked as we liked. That system worked much better for us. The three biggest lessons we learned are as follows:
 - Docker and vms
@@ -364,9 +363,9 @@ We learned that even though mongoDB is supposed to be faster for web development
 
 
 
-*footnotes
+*footnotes*
 
-<sup>[**1**]</sup> *https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/01-HN%20Clone%20Task%20Description.ipynb - Description of hacker news from lsd repo*
+<sup>[**1**]</sup>[ref1](#ref) *https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/01-HN%20Clone%20Task%20Description.ipynb - Description of hacker news from lsd repo*
 
 <sup>[**2**]</sup>*https://github.com/ElDuderino420/HackerNewsClone/blob/master/RAD.md - RAD of the lsd project made prior in the semester.*
 
