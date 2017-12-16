@@ -117,22 +117,17 @@ https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/Dockerfile
 We also soon after we started working on our project got the requirements from school that Helge would be posting Posts and Comments to our web application. These requirements altered our plans for the REST calls slightly, because of the way they would be sent and handled. 
 The posts and comments that were sent to us as JSON blobs, had the following format: 
 
-{"username": "<string>",
- 
- "post_type": "<string>",
- 
- "pwd_hash": "<string>",
- 
+```json
+{"username": "<string>", 
+ "post_type": "<string>", 
+ "pwd_hash": "<string>", 
  "post_title": "<string>",
- 
- "post_url": "<string>",
- 
- "post_parent": <int>,
- 
- "hanesst_id": <int>,
- 
+ "post_url": "<string>", 
+ "post_parent": <int>, 
+ "hanesst_id": <int>, 
  "post_text": "<string>"}
- 
+```
+
 
 As we had designed the system to be able to handle request from the frontend as well as from Helge, there were a few things that made it so we had to split these into separate API calls. One would handle REST calls sent from the frontend, another would handle REST calls sent from Helge. 
 Helges posts were special as they had to contain hanesst_id, which was a special id used only by Helge to keep track of our latest received post. 
