@@ -77,8 +77,8 @@ When the frontend is up and running it’ll only communicate with the backend, i
 
 
 <p align="center"><img src="https://github.com/ElDuderino420/HackerNewsClone/blob/master/LSDShots/1.PNG" alt="arch diagram" width="50%" height="50%" border="10"></p>
-An illustration detailing the connections between the various subsystems, that make up 
-our Hackernews clone (source: ill. made for earlier assignment. Org. handin: https://github.com/ElDuderino420/HackerNewsClone/blob/master/documentation.pdf)
+<p><i>An illustration detailing the connections between the various subsystems, that make up 
+our Hackernews clone (source: ill. made for earlier assignment. Org. handin: https://github.com/ElDuderino420/HackerNewsClone/blob/master/documentation.pdf)</i></p>
 
 ### Communication
 The communication between the various subsystems mentioned above can be outlined as follows in this table:    
