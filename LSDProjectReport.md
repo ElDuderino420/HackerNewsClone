@@ -270,7 +270,7 @@ angular.module('haxorNews')
         }
     });
 ```
-<i><p>An illustration detailing how we used angular.js to parse a post to the factory https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/controllers/newPostCtrl.js  
+<i><p>An illustration detailing how we used angular.js to parse a post to the factory https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/controllers/newPostCtrl.js  </p></i>
 
 The html is just used for the visuals and calls back to our angular controller. Our angular controller then takes one of our rest calls from our backend in order to show the data on the html page.
 
