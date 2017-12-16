@@ -25,7 +25,7 @@ The backend repository can be found here: https://github.com/ElDuderino420/Hacke
 
 ## System Requirements
 The objective of this project is to make a clone of https://news.ycombinator.com/. 
-This requires the app to have a list of features that have been extracted from here<a name="ref1"><sup>[**1**]</sup></a>.
+This requires the app to have a list of features that have been extracted from here<a name="ref1">[<sup>[**1**]</sup>](#end1)</a>].
 
 Functional requirements can be summed up as the following 6<sup>[**2**]</sup>:
 - Users should be able to create an account and login
@@ -365,7 +365,7 @@ We learned that even though mongoDB is supposed to be faster for web development
 
 *footnotes*
 
-<sup>[**1**]</sup>[ref1](#ref1) *https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/01-HN%20Clone%20Task%20Description.ipynb - Description of hacker news from lsd repo*
+<a name="end1">[<sup>[**1**]</sup>](#ref1)</a> *https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/01-HN%20Clone%20Task%20Description.ipynb - Description of hacker news from lsd repo*
 
 <sup>[**2**]</sup>*https://github.com/ElDuderino420/HackerNewsClone/blob/master/RAD.md - RAD of the lsd project made prior in the semester.*
 
