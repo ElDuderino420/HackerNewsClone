@@ -29,7 +29,7 @@ Functional requirements can be summed up as the following 6:
 Non-functional requirements can be summed up as the following:
 - The system needs to have an uptime of at least 95% between 11. of Nov and 14. of Dec
 - There should be a REST api to post and get the latest posted story which a simulator can access.
-- a Rest call that can respond Alive, Update, or Down accordingly
+- A Rest call that can respond Alive, Update, or Down accordingly
 
 
 ## Development Process
