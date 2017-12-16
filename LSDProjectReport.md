@@ -365,7 +365,7 @@ We learned that even though mongoDB is supposed to be faster for web development
 
 *footnotes*
 
-<sup>[**1**]</sup>[ref1](#ref) *https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/01-HN%20Clone%20Task%20Description.ipynb - Description of hacker news from lsd repo*
+<sup>[**1**]</sup>[ref1](#ref1) *https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/01-HN%20Clone%20Task%20Description.ipynb - Description of hacker news from lsd repo*
 
 <sup>[**2**]</sup>*https://github.com/ElDuderino420/HackerNewsClone/blob/master/RAD.md - RAD of the lsd project made prior in the semester.*
 
