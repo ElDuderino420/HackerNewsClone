@@ -1,6 +1,6 @@
 
 
-LSD REPORT
+# LSD REPORT
 Hackernews Clone
 ---
 
@@ -14,9 +14,10 @@ The frontend repository can be found here: https://github.com/ElDuderino420/Hack
 The backend repository can be found here: https://github.com/ElDuderino420/HackerNewsClone-backend 
 
 
-# System Requirements
+## System Requirements
 The objective of this project is to make a clone of https://news.ycombinator.com/. 
 This requires the app to have a list of features that have been extracted from here.
+
 Functional requirements can be summed up as the following 6:
 - Users should be able to create an account and login
 - Users should be able to create stories or links on the website
@@ -31,7 +32,7 @@ Non-functional requirements can be summed up as the following:
 - a Rest call that can respond Alive, Update, or Down accordingly
 
 
-# Development Process
+## Development Process
 Throughout this project we, group A, have been working using parts from Scrum and XP. As Scrum is agile and always is open to changes in requirements, it was the most suitable choice for this development process.
 We integrated some principles from XP, such as continuous integration and pair programming. The latter being a big factor, since it often allows us to catch errors quite quickly. One person codes while the other observes, navigates and review the code that is being made.
 
@@ -48,9 +49,9 @@ When the upload of the image is done, Jenkins creates a SSH connection to the pr
 
 ---
 
-# System Architecture
+## System Architecture
 
-## Subsystems
+### Subsystems
 In essence our system consists of a number of distinct applications and their supporting resources.
 These applications are as follows:
 - Backend/server.
@@ -97,14 +98,14 @@ Frontend
 
 One arrow in the middle column indicates that the communication between system A and system B is unidirectional, while two arrows, pointing seperate directions, indicates that the data exchange has the possibility to be omnidirectional.
 
-## Reasoning for Architecture
+### Reasoning for Architecture
 The reason we have chosen the system architecture outlined in the above parts, is that we wanted the different subsystems to be as independent of one another as possible.
 
 This means that we wanted as few connections between the subsystems as we could get away with. 
 
 Besides being easier to manage this also allows easy debugging since this, somewhat linear, system architecture makes it a breeze to isolate potential errors. 
 
-## Software Design
+### Software Design
 In the beginning of the project, we had a pretty clear idea of how we wanted to design the system; a simple single page application with a REST API backend. We had the various REST calls figured out and documented. Since the system was a clone of an already existing system “hackernews” we also had the general design of the frontend decided.
 As time passed, we learned new technologies that we wanted to implement in our system. For example, we had never worked with Docker containers before learning about them at school, so we decided to have each of our subsystems in individual Docker containers. 
 
@@ -115,14 +116,23 @@ https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/Dockerfile
 
 We also soon after we started working on our project got the requirements from school that Helge would be posting Posts and Comments to our web application. These requirements altered our plans for the REST calls slightly, because of the way they would be sent and handled. 
 The posts and comments that were sent to us as JSON blobs, had the following format: 
-{"username": "<string>", 
- "post_type": "<string>", 
- "pwd_hash": "<string>", 
+
+{"username": "<string>",
+ 
+ "post_type": "<string>",
+ 
+ "pwd_hash": "<string>",
+ 
  "post_title": "<string>",
- "post_url": "<string>", 
- "post_parent": <int>, 
- "hanesst_id": <int>, 
+ 
+ "post_url": "<string>",
+ 
+ "post_parent": <int>,
+ 
+ "hanesst_id": <int>,
+ 
  "post_text": "<string>"}
+ 
 
 As we had designed the system to be able to handle request from the frontend as well as from Helge, there were a few things that made it so we had to split these into separate API calls. One would handle REST calls sent from the frontend, another would handle REST calls sent from Helge. 
 Helges posts were special as they had to contain hanesst_id, which was a special id used only by Helge to keep track of our latest received post. 
@@ -137,7 +147,7 @@ In the end we got everything designed to work out according to the requirements.
 
 ---
 
-# Software Implementation
+## Software Implementation
 Our service was set up using a node.js backend with a HTML and Angular frontend. Our backend connects to a Mongo database where we have setup schemas using the mongoose framework. Here is an example of our post schema using mongoose:
 
 An illustration detailing the post schema https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/models/Post.js 
@@ -164,14 +174,14 @@ We tried to follow all requirements as they were given. We never changed our sof
 
 ---
 
-# Maintenance and SLA Status
+## Maintenance and SLA Status
 It should be noted that the group we were operating, promised on the day we were supposed to do the handover, that their SLA would be ready within a week and that their monitoring was not running but it would be done soon.
 We have since then been asking them to handover everytime we met in class and several times on sms, as that was the only contact information they ever gave us. 
 
-## Hand-Over
+### Hand-Over
 We received the SLA on the 15/12/2017, we have still not received any monitoring from them. The SLA in itself is fine, but we feel the resources given to us, are inadequate to maintain their application.
 
-## Service-Level Agreement
+### Service-Level Agreement
 We looked through it and there was some noticeable disagreements that have not been resolved as of yet.
 - They have written in the SLA, that they are the customer and we are the providers, which should be the other way around as we are monitoring them.
 - They have stated that they would provide three distinct metrics and a grafana instance to monitor them, none of which we have been given. This means that the following were impossible to observer: 
@@ -179,12 +189,14 @@ We looked through it and there was some noticeable disagreements that have not b
  - CPU Usage
  - Support Response Time
 
-## Maintenance and Reliability
+### Maintenance and Reliability
 We could not really monitor them as mentioned before, we did however try to use Helges chart over server responses from the hanesst_id posts. We noticed fairly quickly that their server was not responding, and we backtracked through Helges mails, what their ip for their server was and found that it was not functioning properly. We notified them via sms, they confirmed the message, but it was never fixed. 
 
 Ill. A screenshot of the group K’s responses to /latest. After the 8th of November all responses stop. (Source: http://138.68.91.198/chart.svg Hosted by Helge)
 
-# Technical Discussion
+---
+
+## Technical Discussion
 Overall most of us have enjoyed the project. The idea to make a clone of an existing webapp, and have us use it for a variety of different subjects, while still maintaining the core of the app is nice. 
 In the start we were really enthusiastic, but when we were hit with a lot of restrictions, such as delayed requirements or forced limitations our enthusiasm plomitted. For example we would have liked to use web tokens, but with the test data sending us the password in plain text we were kinda forced to avoid it, unless we wanted to do a lot of extra work to implement it.
 There were some things we liked. Even though we were building another webapp, it was used as a platform to learn a lot of different tools that can be used for multiple purposes such as: CI/CD, jenkins, virtual machines, docker, and hosting. 
@@ -193,7 +205,7 @@ We also enjoyed the idea that it had to have a certain amount of uptime, forcing
 All in all even though we had to make another webapp which could have been a bit repetitive, it ended up being both an informative and valued experience. 
 
  
-## Group Work Reflection & Lessons Learned
+### Group Work Reflection & Lessons Learned
 We designated roles to every member of the group, and after the first day we completely forgot about them and just worked as we liked. That system worked much better for us. The three biggest lessons we learned are as follows:
 - Docker and vms
 
