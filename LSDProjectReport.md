@@ -181,7 +181,7 @@ var postSchema = new Schema({
     comments: {type: []}
 });
 ```
-An illustration detailing the post schema https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/models/Post.js 
+<p><i>An illustration detailing the post schema</i></p> https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/models/Post.js 
 
 Our backend is set up to retrieve and send JSON encoded data, as per the requirements. 
 We, however were forced to change the way our backend retrieved data, as some of the data that we were given was not JSON encoded. 
@@ -212,7 +212,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 ```
-An illustration detailing how we made our backend parses the incoming requests https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/server.js
+<p><i> An illustration detailing how we made our backend parses the incoming requests</i></p> https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/server.js
 
 The frontend was comprised of some simple HTML pages, some more simple than others (single story), and using angular to handle the logic. 
 
@@ -240,7 +240,7 @@ We used bootstrap to style the html pages as well as some of our own css. We use
     </div>
 </form>
 ```
-An illustration detailing how we used forms to create posts on the fronend https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/pages/newPost.html 
+<i><p>An illustration detailing how we used forms to create posts on the fronend</i></p> https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/pages/newPost.html 
 
 ```Javascript
 angular.module('haxorNews')
@@ -269,7 +269,7 @@ angular.module('haxorNews')
         }
     });
 ```
-An illustration detailing how we used angular.js to parse a post to the factory https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/controllers/newPostCtrl.js 
+<i><p>An illustration detailing how we used angular.js to parse a post to the factory</i></p> https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/controllers/newPostCtrl.js 
 
 The html is just used for the visuals and calls back to our angular controller. Our angular controller then takes one of our rest calls from our backend in order to show the data on the html page.
 
@@ -288,7 +288,7 @@ createPost: function (post, callback) {
                 })
             }
 ```
-An illustration detailing how the frontend calls the backend with angular a factory. https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/factory.js 
+<i><p>An illustration detailing how the frontend calls the backend with angular a factory. </i></p>https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/factory.js 
 
 As this project was a group project, we needed a way to work on it at the same time. We used github to allow for easy collaboration on the project allowing all our members to work simultaneously. 
 
