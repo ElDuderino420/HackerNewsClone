@@ -111,6 +111,24 @@ As time passed, we learned new technologies that we wanted to implement in our s
 
 
 The base image used for our backend was node:boron. The backend dockerfile shown below:
+
+```Dockerfile
+FROM node:boron
+
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install
+
+# Bundle app source
+COPY . /usr/src/app
+
+EXPOSE 3000
+CMD [ "npm", "start" ]
+```
 https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/Dockerfile 
 
 
@@ -134,7 +152,15 @@ Helges posts were special as they had to contain hanesst_id, which was a special
 They also sent a hashed version of the user's password. This was also against our first instinct when designing the application. Normally one would never send the password along with the data in the REST call, but handle with JWT(JSON Web Tokens), token based security. We ended up never implementing JWT because of this.
 The data sent to us from Helge was also said to be in the format of JSON blob. This was also not according to our original design plan, normally we could send the data as pure JSON object with no need of conversion. This created some troubles when we actually had to parce to data sent to us. To fix this we created a middleware function that parses the data and adds it to the request.
 
-
+```Javascript
+let rawBodySaver = function (req, res, buf, encoding)
+{
+    if (buf && buf.length)
+    {
+        req.rawBody = JSON.parse(buf.toString(encoding || 'utf8'));
+    }
+}
+```
 https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/server.js 
 
 
