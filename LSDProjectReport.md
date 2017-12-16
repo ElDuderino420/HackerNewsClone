@@ -1,10 +1,8 @@
 
 
-# LSD REPORT
+# Large System Development Report
 
 ## Hackernews Clone
-
----
 
 ## Authors
 - David Blum
