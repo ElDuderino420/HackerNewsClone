@@ -150,7 +150,7 @@ let rawBodySaver = function (req, res, buf, encoding)
     }
 }
 ```
-<i><p> https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/server.js</i></p>  
+<i><p>An illustration https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/server.js</i></p>  
 
 
 In the end we got everything designed to work out according to the requirements.
