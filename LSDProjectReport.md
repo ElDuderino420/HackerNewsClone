@@ -178,7 +178,9 @@ In the end we got everything designed to work out according to the requirements.
 ---
 
 ## Software Implementation
-Our service was set up using a node.js backend with a HTML and Angular frontend. Our backend connects to a Mongo database where we have setup schemas using the mongoose framework. Here is an example of our post schema using mongoose:
+Our service was set up using a node.js backend with a HTML and Angular frontend. Our backend connects to a Mongo database where we have setup schemas using the mongoose framework. 
+
+Here is an example of our post schema using mongoose:
 
 ```Javascript
 var postSchema = new Schema({
@@ -202,7 +204,10 @@ var postSchema = new Schema({
 ```
 An illustration detailing the post schema https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/models/Post.js 
 
-Our backend is set up to retrieve and send JSON encoded data, as per the requirements. We, however were forced to change the way our backend retrieved data, as some of the data that we were given was not JSON encoded. Our way of converting this data is seen in the example below:
+Our backend is set up to retrieve and send JSON encoded data, as per the requirements. 
+We, however were forced to change the way our backend retrieved data, as some of the data that we were given was not JSON encoded. 
+
+Our way of converting this data is seen in the example below:
 
 ```Javascript
 let rawBodySaver = function (req, res, buf, encoding)
@@ -230,7 +235,9 @@ app.use(bodyParser.urlencoded({
 ```
 An illustration detailing how we made our backend parses the incoming requests https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/server.js
 
-The frontend was comprised of some simple HTML pages, some more simple than others (single story), and using angular to handle the logic. We used bootstrap to style the html pages as well as some of our own css. We used angular.js as none of us have experience using angular 2 or angular 4. Here is an example of one of our html pages with the angular logic behind it:
+The frontend was comprised of some simple HTML pages, some more simple than others (single story), and using angular to handle the logic. 
+
+We used bootstrap to style the html pages as well as some of our own css. We used angular.js as none of us have experience using angular 2 or angular 4. Here is an example of one of our html pages with the angular logic behind it:
 
 ```HTML
 <h2>Haxor news new post</h2>
@@ -286,6 +293,7 @@ angular.module('haxorNews')
 An illustration detailing how we used angular.js to parse a post to the factory https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/controllers/newPostCtrl.js 
 
 The html is just used for the visuals and calls back to our angular controller. Our angular controller then takes one of our rest calls from our backend in order to show the data on the html page.
+
 This in turn will get relayed to the factory that holds all the functions that connect to the database, these are kept together such that in the case that if the api is changed, the functions only need to be changed one time and in one place.
 
 ```Javascript
@@ -303,9 +311,14 @@ createPost: function (post, callback) {
 ```
 An illustration detailing how the frontend calls the backend with angular a factory. https://github.com/ElDuderino420/HackerNewsClone-frontend/blob/master/public/js/factory.js 
 
-As this project was a group project, we needed a way to work on it at the same time. We used github to allow for easy collaboration on the project allowing all our members to work simultaneously. We used git branches to make sure we wouldn’t end up with a bunch of merge conflicts, if people happened to be looking at the same files.
+As this project was a group project, we needed a way to work on it at the same time. We used github to allow for easy collaboration on the project allowing all our members to work simultaneously. 
+
+We used git branches to make sure we wouldn’t end up with a bunch of merge conflicts, if people happened to be looking at the same files.
+
 We used digitalocean to host our web service to the world wide web so that other people can view our service.
+
 We used dockerhub to host our docker images. 
+
 We tried to follow all requirements as they were given. We never changed our software choices as we always wanted to use node.js and angular.js for our backend and frontend respectively. We had to create a few changes here and there such as add indices to our backend as the post count got into the millions, however we did not change our design too much during the work process.
 
 ---
