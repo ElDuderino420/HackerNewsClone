@@ -1,15 +1,17 @@
 
 
 # LSD REPORT
-Hackernews Clone
+
+##Hackernews Clone
+
 ---
 
 ## Authors
 - David Blum
-- Alex
-- Kasper
-- Marco
-- Lind
+- Marco Blum
+- Alexandar Kraunsøe
+- Christian Lind
+- Kasper Pagh
 
 ---
 
@@ -333,12 +335,27 @@ Ill. A screenshot of the group K’s responses to /latest. After the 8th of Nove
 ---
 
 ## Technical Discussion
-Overall most of us have enjoyed the project. The idea to make a clone of an existing webapp, and have us use it for a variety of different subjects, while still maintaining the core of the app is nice. 
+Overall most of us have enjoyed the project. The idea to make a clone of an existing webapp, and have us use it for a variety of different subjects, while still maintaining the core of the app is nice.
+
 In the start we were really enthusiastic, but when we were hit with a lot of restrictions, such as delayed requirements or forced limitations our enthusiasm plomitted. For example we would have liked to use web tokens, but with the test data sending us the password in plain text we were kinda forced to avoid it, unless we wanted to do a lot of extra work to implement it.
-There were some things we liked. Even though we were building another webapp, it was used as a platform to learn a lot of different tools that can be used for multiple purposes such as: CI/CD, jenkins, virtual machines, docker, and hosting. 
-We also liked that the database was put under a lot of stress to make us actively look at how to optimize it. We have previously skimped on it as it did not have to host such a large dataset. 
+
+There were some things we liked. Even though we were building another webapp, it was used as a platform to learn a lot of different tools that can be used for multiple purposes such as: CI/CD, jenkins, virtual machines, docker, and hosting.
+
+We also liked that the database was put under a lot of stress to make us actively look at how to optimize it. We have previously skimped on it as it did not have to host such a large dataset.
+
 We also enjoyed the idea that it had to have a certain amount of uptime, forcing us to look at how we deployed, and really showing us the value of a tool such as jenkins. The implication that the backend was online for an extended period of time, exposed it to hacker attempts, which we have not tried previously.
+
 All in all even though we had to make another webapp which could have been a bit repetitive, it ended up being both an informative and valued experience. 
+
+As a side note we want to elaborate on why we think that choosing to only accept .md formats is a bad idea. It has a good implementation of code snippets and is good for readme files but in the grand scheme of things it does not even come close to other formats such as pdf when handing in a report. 
+We have throughout the whole project written the handins in google docs and then spent a good half hour on trying to make it look just half as good as would have in pdf. Other editors give a multitude of better tools such as:
+- Multiple editors, some with with multiple authors support such as google docs.
+- Table of contents
+- Footnotes
+- Page numbers
+- Pictures are much easier implemented in any other text editor.
+- Line breaks, .md often has lines that break and some that doesn’t where one has to go through it multiple times to put <br> everywhere.
+- A host of other tools and formats that are just not viable in .md
 
  
 ### Group Work Reflection & Lessons Learned
