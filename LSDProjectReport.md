@@ -25,9 +25,9 @@ The backend repository can be found here: https://github.com/ElDuderino420/Hacke
 
 ## System Requirements
 The objective of this project is to make a clone of https://news.ycombinator.com/. 
-This requires the app to have a list of features that have been extracted from here.
+This requires the app to have a list of features that have been extracted from here<sup>[**1**]</sup>.
 
-Functional requirements can be summed up as the following 6:
+Functional requirements can be summed up as the following 6<sup>[**2**]</sup>:
 - Users should be able to create an account and login
 - Users should be able to create stories or links on the website
 - Users should be able to create comments to other Users stories
@@ -48,12 +48,12 @@ We integrated some principles from XP, such as continuous integration and pair p
 While using the Waterfall methodology was a possibility too, we quickly discarded it, because while some of the project's requirements were known to us beforehand, there was also a lot of unknowns and not yet requested features. This, in the end, would have messed up our development planning.  
 
 As mentioned earlier, we’ve been using continuous integration and deployment.
-In a conceptual sense, the practice of continuous integration is used to encourage development teams to commit and integrate their code, to a shared repository more frequently during the development process. Sometimes several times a day. 
+In a conceptual sense, the practice of continuous integration<sup>[**3**]</sup> is used to encourage development teams to commit and integrate their code, to a shared repository more frequently during the development process. Sometimes several times a day. 
 
 Continuous deployment is an extension of continuous integration, however, it focuses on minimizing the time between a member of the development team writing some code, before it’s been tested, built and added to the live application.
 
-To achieve this goal of continuous integration and deployment we use github, Jenkins and DockerHub. Whenever a change in the master branch of the given github repository is detected, our instance of Jenkins automatically pulls the new code from github.
-This code is then tested and if it passes, a new docker image is built and uploaded to DockerHub. 
+To achieve this goal of continuous integration and deployment we use a combination of github<sup>[**4**]</sup>, Jenkins<sup>[**5**]</sup> and DockerHub<sup>[**6**]</sup>. Whenever a change in the master branch of the given github repository is detected, our instance of Jenkins automatically pulls the new code from github.
+This code is then tested and if it passes, a new docker image<sup>[**7**]</sup> is built and uploaded to DockerHub. 
 When the upload of the image is done, Jenkins creates a SSH connection to the production server and run a few select scripts, that handles the download and subsequent redeployment of the images. 
 
 ---
@@ -70,7 +70,7 @@ These applications are as follows:
 
 Furthermore we also have a buildserver that rebuilds the above applications whenever a change happens to their source code, as well as a repository where said source code resides. 
 
-The buildserver and the source repository communicate via a so called webhook, which is to say, that the repository fires a POST request towards the buildserver whenever a change to a specific branch in either the backend or frontend repository is detected. 
+The buildserver and the source repository communicate via a so called webhook<sup>[**8**]</sup>, which is to say, that the repository fires a POST request towards the buildserver whenever a change to a specific branch in either the backend or frontend repository is detected. 
 This requests prompts the buildserver to get the latest code to test, build and deploy it.
 
 When the frontend is up and running it’ll only communicate with the backend, in turn meaning that all communication to and from the database is handled exclusively by the backend. 
@@ -94,7 +94,7 @@ This means that we wanted as few connections between the subsystems as we could 
 Besides being easier to manage this also allows easy debugging since this, somewhat linear, system architecture makes it a breeze to isolate potential errors. 
 
 ### Software Design
-In the beginning of the project, we had a pretty clear idea of how we wanted to design the system; a simple single page application with a REST API backend. We had the various REST calls figured out and documented. Since the system was a clone of an already existing system “hackernews” we also had the general design of the frontend decided.
+In the beginning of the project, we had a pretty clear idea of how we wanted to design the system; a simple single page application with a REST API backend. We had the various REST calls figured out and documented<sup>[**9**]</sup>. Since the system was a clone of an already existing system “hackernews” we also had the general design of the frontend decided.
 As time passed, we learned new technologies that we wanted to implement in our system. For example, we had never worked with Docker containers before learning about them at school, so we decided to have each of our subsystems in individual Docker containers. 
 
 
@@ -295,9 +295,9 @@ As this project was a group project, we needed a way to work on it at the same t
 
 We used git branches to make sure we wouldn’t end up with a bunch of merge conflicts, if people happened to be looking at the same files.
 
-We used digitalocean to host our web service to the world wide web so that other people can view our service.
+We used digitalocean<sup>[**10**][**11**]</sup> to host our web service to the world wide web so that other people can view our service.
 
-We used dockerhub to host our docker images. 
+We used dockerhub to host our docker images<sup>[**12**]</sup>. 
 
 We tried to follow all requirements as they were given. We never changed our software choices as we always wanted to use node.js and angular.js for our backend and frontend respectively. We had to create a few changes here and there such as add indices to our backend as the post count got into the millions, however we did not change our design too much during the work process.
 
@@ -308,7 +308,7 @@ It should be noted that the group we were operating, promised on the day we were
 We have since then been asking them to handover everytime we met in class and several times on sms, as that was the only contact information they ever gave us. 
 
 ### Hand-Over
-We received the SLA on the 15/12/2017, we have still not received any monitoring from them. The SLA in itself is fine, but we feel the resources given to us, are inadequate to maintain their application.
+We received the SLA<sup>[**13**]</sup> on the 15/12/2017, we have still not received any monitoring from them. The SLA in itself is fine, but we feel the resources given to us, are inadequate to maintain their application.
 
 ### Service-Level Agreement
 We looked through it and there was some noticeable disagreements that have not been resolved as of yet.
@@ -363,4 +363,32 @@ We have often used continuous integration prior to this semester without really 
 We learned that even though mongoDB is supposed to be faster for web development, that depends on how you use it (indexes). Security is also something we learned a lot about, especially how mongoDB does not seem to have any default settings, and should be setup from the start.
 
 
+
+*footnotes
+
+<sup>[**1**]</sup> *https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/01-HN%20Clone%20Task%20Description.ipynb - Description of hacker news from lsd repo*
+
+<sup>[**2**]</sup>*https://github.com/ElDuderino420/HackerNewsClone/blob/master/RAD.md - RAD of the lsd project made prior in the semester.*
+
+<sup>[**3**]</sup> *https://www.visualstudio.com/learn/what-is-continuous-integration/*
+
+<sup>[**4**]</sup> *https://github.com/*
+
+<sup>[**5**]</sup> *https://jenkins-ci.org/*
+
+<sup>[**6**]</sup> *https://hub.docker.com/*
+
+<sup>[**7**]</sup> *https://hub.docker.com/r/elduderino420/hackernewsbackend/*
+
+<sup>[**8**]</sup> *https://en.wikipedia.org/wiki/Webhook & https://sendgrid.com/blog/whats-webhook/*
+
+<sup>[**9**]</sup> *https://github.com/ElDuderino420/HackerNewsClone-backend/blob/master/HackerNewsApiDocumentation_V3.pdf*
+
+<sup>[**10**]</sup> *http://146.185.172.211:8080/login?from=%2F - hosted jenkins server*
+
+<sup>[**11**]</sup> *http://188.226.152.93/#/ - frontend server, http://188.226.152.93:8080/latest - backend nginx server*
+
+<sup>[**12**]</sup> *https://hub.docker.com/r/elduderino420/hackernewsbackend/ *
+
+<sup>[**13**]</sup> *https://github.com/HakimiX/SLA*
 
